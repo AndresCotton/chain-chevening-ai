@@ -17,7 +17,7 @@
   --text-light: #F5F1E8;
   --text-light-dim: #A9BBC9;
 
-  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
   --sans:  "Libre Franklin", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 
   --wrap: 1120px;
@@ -185,8 +185,7 @@ a{ color: inherit; }
 
 .hero-sub{
   font-family: var(--serif);
-  font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   font-size: clamp(20px, 2.6vw, 30px);
   color: var(--gold-soft);
   margin: 14px 0 34px;
@@ -213,6 +212,50 @@ a{ color: inherit; }
   padding-top: 16px;
 }
 .scroll-cue svg{ color: var(--gold); }
+
+/* ---------------- Guest logo marquee ---------------- */
+
+.marquee-band{
+  background: var(--ink);
+  color: var(--text-light);
+  padding: 52px 0 60px;
+  border-top: 1px solid var(--ink-line);
+}
+.marquee-label{
+  text-align: center;
+  font-size: 12.5px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-light-dim);
+  margin: 0 0 36px;
+  padding: 0 32px;
+}
+.marquee{ overflow: hidden; }
+.marquee-track{ display: flex; width: max-content; }
+.marquee-group{
+  display: flex;
+  align-items: center;
+  gap: 96px;
+  padding-right: 96px;
+  animation: marquee-scroll 30s linear infinite;
+}
+.marquee-group img{
+  height: 26px;
+  width: auto;
+  max-width: 150px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.7;
+  flex: none;
+}
+@keyframes marquee-scroll{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-100%); }
+}
+@media (prefers-reduced-motion: reduce){
+  .marquee-group{ animation: none; }
+  .marquee-track{ width: auto; flex-wrap: wrap; justify-content: center; }
+}
 
 /* ---------------- Bands ---------------- */
 
@@ -369,6 +412,15 @@ a{ color: inherit; }
 
 .register-entry--noline .register-name{ color: var(--text-light); }
 
+.register-more{
+  text-align: right;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--text-light-dim);
+  font-size: 15px;
+  margin: 32px 0 0;
+}
+
 /* ---------------- Network / Mosaic ---------------- */
 
 .stat-row{
@@ -449,6 +501,14 @@ a{ color: inherit; }
 }
 
 .team-card{ text-align: left; }
+
+.team-link{
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+.team-link:hover .team-name{ color: var(--gold-soft); }
+.team-link .team-name{ transition: color .2s ease; }
 
 .team-photo{
   width: 100%;
