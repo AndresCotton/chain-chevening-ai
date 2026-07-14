@@ -230,6 +230,7 @@ a{ color: inherit; }
   max-width: 760px;
 }
 .section-title--light{ color: var(--text-light); }
+.section-title--sub{ font-size: clamp(26px, 3vw, 36px); }
 
 .section-lede{
   max-width: 620px;
