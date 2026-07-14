@@ -161,7 +161,7 @@ a{ color: inherit; }
   width: 100%;
   max-width: var(--wrap);
   margin: 0 auto;
-  padding: 160px 40px 120px;
+  padding: 160px 40px 200px;
 }
 
 .eyebrow{
@@ -213,13 +213,14 @@ a{ color: inherit; }
 }
 .scroll-cue svg{ color: var(--gold); }
 
-/* ---------------- Guest logo marquee ---------------- */
+/* ---------------- Guest logo marquee (anchored to hero bottom) ---------------- */
 
-.marquee-band{
-  background: var(--ink);
-  color: var(--text-light);
-  padding: 52px 0 60px;
-  border-top: 1px solid var(--ink-line);
+.hero-marquee{
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  padding: 30px 0 40px;
+  border-top: 1px solid rgba(12, 77, 124, 0.6);
 }
 .marquee-label{
   text-align: center;
@@ -227,7 +228,7 @@ a{ color: inherit; }
   letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--text-light-dim);
-  margin: 0 0 36px;
+  margin: 0 0 26px;
   padding: 0 32px;
 }
 .marquee{ overflow: hidden; }
@@ -645,7 +646,7 @@ a{ color: inherit; }
   .origin-columns{ grid-template-columns: repeat(2, 1fr); }
   .team{ grid-template-columns: 1fr; gap: 40px; max-width: 320px; }
   .band{ padding: 84px 0; }
-  .hero-inner{ padding: 140px 24px 90px; }
+  .hero-inner{ padding: 140px 24px 210px; }
   .wrap{ padding: 0 24px; }
 }
 
