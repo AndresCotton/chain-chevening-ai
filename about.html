@@ -4,21 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Us -- CHAIN</title>
-<meta name="description" content="CHAIN was founded in 2024 by three Chevening alumni: Andrés Cotton, Agustina Brizio and Lucas Pratesi.">
+<meta name="description" content="CHAIN is the specialised AI network within Chevening. Founded in 2024 by Andrés Cotton, Agustina Brizio and Lucas Pratesi, its 90+ members come from 26 countries across four continents.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=Libre+Franklin:wght@300;400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="topbar">
+<header class="topbar on-light">
   <a class="wordmark" href="index.html">CHAIN</a>
   <nav class="topnav">
     <a href="index.html">Home</a>
     <a href="events.html">Guest Register</a>
-    <a href="network.html">The Network</a>
     <a href="about.html" aria-current="page">About Us</a>
+    <a href="about.html#leadership">Leadership</a>
     <a href="contact.html">Contact</a>
   </nav>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
@@ -29,36 +29,88 @@
 <nav class="mobile-nav" id="mobileNav">
   <a href="index.html">Home</a>
   <a href="events.html">Guest Register</a>
-  <a href="network.html">The Network</a>
   <a href="about.html">About Us</a>
+  <a href="about.html#leadership">Leadership</a>
   <a href="contact.html">Contact</a>
 </nav>
 
 <main>
-  <section class="band band--ink page-band">
+  <section class="band band--ivory page-band">
+    <div class="wrap">
+      <p class="eyebrow">The wider network</p>
+      <h1 class="section-title">The AI network within Chevening.</h1>
+      <p class="section-lede">Chevening is the UK government's flagship international scholarship programme. Its alumni community includes 22 current or former heads of state or government, along with hundreds of ministers and industry leaders. CHAIN is the specialised artificial intelligence network within it.</p>
+
+      <p class="eyebrow">Who we are</p>
+      <h2 class="section-title section-title--sub">One network, four continents.</h2>
+      <p class="section-lede">From Buenos Aires to Nairobi, Seoul to Kyiv -- CHAIN members bring together technical, legal, ethical and policy expertise from every corner of the Chevening world.</p>
+
+      <div class="stat-row">
+        <div class="stat"><span class="stat-num">90+</span><span class="stat-label">Members</span></div>
+        <div class="stat"><span class="stat-num">26</span><span class="stat-label">Countries</span></div>
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Continents</span></div>
+      </div>
+
+      <div class="mosaic" id="mosaic" aria-label="Portraits of CHAIN members from around the world"></div>
+      <p class="mosaic-caption"> -- and many more.</p>
+
+      <div class="origin-columns">
+        <div>
+          <h4>Africa</h4>
+          <p>Kenya, Lesotho, Morocco, Namibia, Sudan</p>
+        </div>
+        <div>
+          <h4>Latin America</h4>
+          <p>Argentina, Brazil, Chile, Colombia, Dominican Republic, Ecuador, Mexico, Peru, Uruguay</p>
+        </div>
+        <div>
+          <h4>Asia</h4>
+          <p>Brunei, Iran, Jordan, Kazakhstan, Lebanon, Malaysia, Pakistan, Palestine, South Korea, Syria</p>
+        </div>
+        <div>
+          <h4>Europe</h4>
+          <p>Armenia, Ukraine</p>
+        </div>
+      </div>
+
+      <p class="section-note">Our members hold degrees from the University of Oxford, Imperial College London, LSE, UCL, the University of Edinburgh and others -- in fields spanning AI &amp; data science, applied AI, and the ethics, law and policy of AI.</p>
+    </div>
+  </section>
+
+  <section class="band band--ink" id="leadership">
     <div class="wrap">
       <p class="eyebrow eyebrow--light">Leadership</p>
-      <h1 class="section-title section-title--light">About Us</h1>
-      <p class="section-lede section-lede--light">CHAIN was founded in 2024 by three Chevening alumni who set out to give the AI community within the Chevening network a permanent home.</p>
+      <h2 class="section-title section-title--light">The founding team.</h2>
+      <p class="section-lede section-lede--light">CHAIN was founded in 2024 by three Chevening scholars -- now alumni -- who set out to give the AI community within the Chevening network a permanent home.</p>
 
       <div class="team">
         <div class="team-card team-card--lead">
-          <div class="team-photo">
-            <img src="assets/andres.jpg" alt="Portrait of Andrés Cotton">
-          </div>
-          <h2 class="team-name">Andrés Cotton</h2>
+          <a class="team-link" href="https://www.linkedin.com/in/andres-cotton/" target="_blank" rel="noopener" aria-label="Andrés Cotton on LinkedIn">
+            <div class="team-photo">
+              <img src="assets/andres.jpg" alt="Portrait of Andrés Cotton">
+            </div>
+            <h3 class="team-name">Andrés Cotton</h3>
+          </a>
           <p class="team-role">President &amp; Co-Founder</p>
         </div>
 
         <div class="team-card">
-          <div class="team-photo team-photo--mono" aria-hidden="true">AB</div>
-          <h2 class="team-name">Agustina Brizio</h2>
+          <a class="team-link" href="https://www.linkedin.com/in/agustina-brizio-a7148576/" target="_blank" rel="noopener" aria-label="Agustina Brizio on LinkedIn">
+            <div class="team-photo">
+              <img src="assets/agustina.jpg" alt="Portrait of Agustina Brizio">
+            </div>
+            <h3 class="team-name">Agustina Brizio</h3>
+          </a>
           <p class="team-role">Co-Founder</p>
         </div>
 
         <div class="team-card">
-          <div class="team-photo team-photo--mono" aria-hidden="true">LP</div>
-          <h2 class="team-name">Lucas Pratesi</h2>
+          <a class="team-link" href="https://www.linkedin.com/in/lucas-pratesi/" target="_blank" rel="noopener" aria-label="Lucas Pratesi on LinkedIn">
+            <div class="team-photo">
+              <img src="assets/lucas.jpg" alt="Portrait of Lucas Pratesi">
+            </div>
+            <h3 class="team-name">Lucas Pratesi</h3>
+          </a>
           <p class="team-role">Co-Founder</p>
         </div>
       </div>
