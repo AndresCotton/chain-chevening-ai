@@ -198,6 +198,16 @@ a{ color: inherit; }
   color: var(--text-light-dim);
   margin: 0 0 56px;
 }
+.hero-desc a{
+  color: var(--gold-soft);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(223, 192, 136, 0.45);
+  transition: color .2s ease, border-color .2s ease;
+}
+.hero-desc a:hover{
+  color: var(--gold);
+  border-bottom-color: var(--gold);
+}
 
 .scroll-cue{
   display: inline-flex;
